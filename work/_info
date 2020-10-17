@@ -9,21 +9,74 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/modeltech64_2019.4/examples
+Z0 dC:/modeltech64_2019.4/examples
+T_opt
+!s110 1602930392
+VTU9SXB2H3J3P:X@zH1hQ>0
+04 9 4 work FullAdder fast 0
+=1-4cedfb2c4da5-5f8ac6d7-1d5-43e4
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2019.4;69
+T_opt1
+!s110 1602927471
+V5f@SN<NO8JRComJaHR@bL2
+04 9 4 work HalfAdder fast 0
+=1-4cedfb2c4da5-5f8abb6e-12d-34b0
+R1
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1602927811
+VJ07@BAIm?MXXB@FUi7UI=0
+04 12 4 work HalfAdder_TB fast 0
+=1-4cedfb2c4da5-5f8abcc2-13f-2010
+R1
+R2
+n@_opt2
+R3
+R0
+vFullAdder
+!s110 1602930376
+!i10b 1
+!s100 J1K26[ioKP0zbL@5e9E4Y2
+!s11b 61?920lT]Nk133bb9SAb?1
+IO;JKn3BCEeU8;<;YW6l[A0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 dC:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git
+w1602930352
+8C:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/FullAdder.v
+FC:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/FullAdder.v
+!i122 -1
+L0 1
+Z6 OL;L;2019.4;69
+r1
+!s85 0
+31
+!s108 1602930376.000000
+!s107 C:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/FullAdder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/FullAdder.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@full@adder
 vHalfAdder
 !s110 1602926686
 !i10b 1
 !s100 WbOJbjLEAB<K@7>`0i2Qg0
 !s11b Z4Q_@;UIe30nK20UVlNZ21
 IY;=[M5_WGXZYUiWMolGzJ0
-VDg1SIo80bB@j0V0VzS_@n1
-dC:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git
+R4
+R5
 w1602925213
 8C:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/HalfAdder.v
 FC:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/HalfAdder.v
 !i122 -1
 L0 1
-OL;L;2019.4;69
+R6
 r1
 !s85 0
 31
@@ -31,6 +84,6 @@ r1
 !s107 C:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/HalfAdder.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/HalfAdder.v|
 !i113 0
-o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-tCvgOpt 0
+R7
+R2
 n@half@adder
