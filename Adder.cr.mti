@@ -5,18 +5,18 @@ Model Technology ModelSim SE-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
 Top level modules:
 	RippleCarryAdder
 
-} {} {}} {C:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/FullAdder.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/FullAdder.v}
-Model Technology ModelSim SE-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
--- Compiling module FullAdder
-
-Top level modules:
-	FullAdder
-
 } {} {}} {C:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/HalfAdder.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/HalfAdder.v}
 Model Technology ModelSim SE-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
 -- Compiling module HalfAdder
 
 Top level modules:
 	HalfAdder
+
+} {} {}} {C:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/FullAdder.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/FullAdder.v}
+Model Technology ModelSim SE-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+-- Compiling module FullAdder
+
+Top level modules:
+	FullAdder
 
 } {} {}}

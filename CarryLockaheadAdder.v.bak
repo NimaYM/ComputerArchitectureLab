@@ -2,20 +2,20 @@ module CarryLockaheadAdder(X, Y, cin, result);
 	parameter n = 64;
 	input cin;
 	input [n-1:0] X, Y;
-	output reg [n:0] result;
-	reg [n-1:0] P, G;
-	reg [n:0] C;
+	output [n:0] result;
+	wire [n-1:0] P, G;
+	wire [n:0] C;
 
-	C[0] = cin;
-	result[n] = C[n];
+	assign C[0] = cin;
+	assign result[n] = C[n];
 
 	genvar i;
 	generate
 		for(i = 0; i < n; i=i+1)
 		begin
-			P[i] = X[i]|Y[i];
-			G[i] = X[i]&Y[i];
-			C[i+1] = G[i] | (P[i]&C[i]);
+			assign P[i] = X[i]|Y[i];
+			assign G[i] = X[i]&Y[i];
+			assign C[i+1] = G[i] | (P[i]&C[i]);
 		end
 	endgenerate
 
@@ -24,8 +24,8 @@ module CarryLockaheadAdder(X, Y, cin, result);
 		for(j = 0; j < n; j=j+1)
 		begin
 			//FullAdder fa ( X[i], Y[i], cin, result[i], C[i+1]);
-			result[j] = X[j] ^ Y[j] ^ C[j];
-			C[j+1] = (X[j]&Y[j]) | (X[j]&C[j]) | (Y[j]&C[j]); 
+			assign result[j] = X[j] ^ Y[j] ^ C[j];
+			assign C[j+1] = (X[j]&Y[j]) | (X[j]&C[j]) | (Y[j]&C[j]); 
 		end
 	endgenerate
 endmodule

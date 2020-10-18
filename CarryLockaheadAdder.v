@@ -23,9 +23,8 @@ module CarryLockaheadAdder(X, Y, cin, result);
 	generate
 		for(j = 0; j < n; j=j+1)
 		begin
-			//FullAdder fa ( X[i], Y[i], cin, result[i], C[i+1]);
+			//FullAdder fa ( X[i], Y[i], cin, result[i], );
 			assign result[j] = X[j] ^ Y[j] ^ C[j];
-			assign C[j+1] = (X[j]&Y[j]) | (X[j]&C[j]) | (Y[j]&C[j]); 
 		end
 	endgenerate
 endmodule

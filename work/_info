@@ -31,23 +31,23 @@ n@_opt1
 R3
 R0
 T_opt2
-!s110 1602947716
-VfaK1YL[m`L1M0^MzXSMBA2
+!s110 1603002726
+VCDeKgi:Ok<0lnI6EWURPf2
 04 19 4 work CarryLockaheadAdder fast 0
-=1-4cedfb2c4da5-5f8b0a83-237-3208
+=1-4cedfb2c4da5-5f8be164-82-2028
 R1
 R2
 n@_opt2
 R3
 vCarryLockaheadAdder
-!s110 1602947707
+!s110 1603002709
 !i10b 1
-!s100 NKhYLmaQUYXKo?MoX[TB`2
-!s11b DX6D<[9d?;fLX36EIj0Q>0
-I2?SBI11DNA@8k=de>eLN41
+!s100 H=j]6=ElaVXbGd[9dh2>Z1
+!s11b DZW`5XF9j4PI>n@Lh6ogI2
+IlCTPS>[D<k?d3Nk;;c[KO2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 Z5 dC:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git
-w1602947702
+w1603002701
 8C:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/CarryLockaheadAdder.v
 FC:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/CarryLockaheadAdder.v
 !i122 -1
@@ -56,7 +56,7 @@ Z6 OL;L;2019.4;69
 r1
 !s85 0
 31
-!s108 1602947707.000000
+!s108 1603002707.000000
 !s107 C:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/CarryLockaheadAdder.v|
 Z7 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Nima Yaqmuri/Documents/Kharazmi/Term 5/Computer Architecture Lab/Git/CarryLockaheadAdder.v|
 !i113 0
