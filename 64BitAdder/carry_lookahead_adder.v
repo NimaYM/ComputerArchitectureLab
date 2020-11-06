@@ -1,8 +1,10 @@
-module CarryLockaheadAdder(X, Y, cin, result);
+module carry_lookahead_adder(X, Y, cin, result);
 	parameter n = 64;
-	input cin;
+	
 	input [n-1:0] X, Y;
+	input cin;
 	output [n:0] result;
+	
 	wire [n-1:0] P, G;
 	wire [n:0] C;
 
@@ -28,4 +30,3 @@ module CarryLockaheadAdder(X, Y, cin, result);
 		end
 	endgenerate
 endmodule
-

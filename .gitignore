@@ -3,3 +3,5 @@ work
 *.mpf
 *.bak
 *.wlf
+*.vcd
+*.vvp
