@@ -25,7 +25,13 @@ module carry_lookahead_adder_tb;
       A = 'd246;
       B = 'd562;
       #10;
+      A = 'd112233;
+      B = 'd332211;
+      #10;
+      A = 'd123456;
+      B = 'd654321;
+      #10;
 
-      $display("Test Complete!");
+      $display("Test Completed!");
     end
 endmodule 
