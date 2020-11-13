@@ -8,18 +8,20 @@ module shift_register_tb;
     reg clk;
     reg direction;
     reg reset;
+    reg enable;
     wire [n-1:0] D;
 
-    shift_register_2 #(n) sr (I, clk, direction, reset, D);
+    shift_register_2 #(n) sr (I, clk, direction, reset, D, enable);
 
     initial
-        $monitor ("I = %b, direction = %0b, D = %b", I, direction, D);
+        $monitor ("I = %b, direction = %0b, D = %b, enable = %b", I, direction, D, enable);
 
     initial begin       
         I <= 0;
         clk <= 0;
         direction <= 0;
         reset <= 0;
+        enable <= 1;
     end
 
     always #10 clk = ~clk;
