@@ -5,3 +5,5 @@ work
 *.wlf
 *.vcd
 *.vvp
+*.workspace
+*.pdsbak
