@@ -12,4 +12,4 @@ of ICs.
 4. Construct the circuit and test it for proper operation by verifying the given
 conditions.
 
-see [document](https://gitlab.margay.ir/NimaYaqmuri/ComputerArchitectureLab/-/blob/master/Proteus/DesignExample/document.jpg) and [circuit](https://gitlab.margay.ir/NimaYaqmuri/ComputerArchitectureLab/-/blob/master/Proteus/DesignExample/circuit.png) of this section.
+see [document](./document.jpg) and [circuit](./circuit.png) of this section.
