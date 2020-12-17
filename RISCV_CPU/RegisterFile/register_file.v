@@ -1,8 +1,8 @@
 module register_file(regWrite, readRegister1, readRegister2, writeRegister, writeData, readData1, readData2, clk);  
-    input[4:0] readRegister1, readRegister2, writeRegister;
-    input[31:0] writeData;
-    output reg[31:0] readData1, readData2;
-    reg[31:0] registerFile[0:31];
+    input [4:0] readRegister1, readRegister2, writeRegister;
+    input [63:0] writeData;
+    output reg [63:0] readData1, readData2;
+    reg [63:0] registerFile [0:31];
     input clk, regWrite;
 
     always @(readRegister1) 
