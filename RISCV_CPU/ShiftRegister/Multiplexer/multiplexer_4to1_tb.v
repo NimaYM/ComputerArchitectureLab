@@ -14,11 +14,13 @@ module multiplexer_4to1_tb;
         $dumpvars(0, multiplexer_4to1_tb);
 
         for(i = 0; i < 16; i=i+1) begin
-            #10
             S = i[1:0];
             W = i;
+            display;
         end
-
-        $display("Test Completed!");
     end
+    
+    task display;
+      #10 $display("W = %4b", W, " S = %0d", S, " f = ", f);
+    endtask
 endmodule 

@@ -3,12 +3,12 @@
 `include "../ClockGenerator/clock_generator.v"
 
 module d_flip_flop_tb;
-    parameter n = 10;
+    parameter n = 20;
     reg D;
     wire clk, Q;
     integer i;
 
-    clock_generator #(n) clock (clk);
+    clock_generator clock (clk);
     d_flip_flop dff(D, clk, Q);
 
     initial begin
@@ -18,9 +18,12 @@ module d_flip_flop_tb;
         D <= 0;
 
         for(i = 0; i < n; i=i+1) begin
-            #10 D = i[1];
+            D = i[1];
+            display;
         end
-
-        $display("Test Completed!");
     end
+
+    task display;
+      #10 $display("Clock = ", clk, " D = ", D, " Q = ", Q);
+    endtask
 endmodule 
