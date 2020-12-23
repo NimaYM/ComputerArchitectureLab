@@ -1,4 +1,4 @@
-module alu_control(aluOp, funct7, funct3, , aluControl);
+module alu_control(aluOp, funct7, funct3, aluControl);
     input [1:0] aluOp;
     input [6:0] funct7;
     input [2:0] funct3;

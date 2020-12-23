@@ -4,7 +4,7 @@
 
 module control_tb;
    wire clk;
-   reg[ 31:0] instruction;
+   reg [31:0] instruction;
    wire [6:0] opcode;
    wire branch, memRead, memToReg, memWrite, aluSrc , regWrite;
    wire [1:0] aluOp;
