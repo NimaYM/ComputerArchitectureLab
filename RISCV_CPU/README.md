@@ -9,3 +9,17 @@ A number of companies are offering or have announced RISC-V hardware, open sourc
 For more information, see [this link](https://en.wikipedia.org/wiki/RISC-V).
 
 ![riscv_social](./riscv_social.jpg)
+
+In this section, we will construct, test and simulate a simple RISC-V CPU.
+
+![datapath](./datapath.png)
+
+## Testbench Result
+
+To see the result of written testbench, use this commands:
+
+```text
+iverilog -o cpu_tb.vvp cpu_tb.v
+vvp cpu_tb.vvp
+gtkwave
+```
