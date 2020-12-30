@@ -12,6 +12,6 @@ module alu(X, Y, aluControl,  aluResult, zero);
         1: aluResult <= (X | Y);
         2: aluResult <= (X + Y);
         6: aluResult <= (X - Y);
-        default: aluResult <= 0;
+        default: aluResult <= 64'bx;
     endcase
 endmodule

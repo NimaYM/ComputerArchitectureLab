@@ -9,9 +9,9 @@ module imm_gen(instruction, out);
 
     always @(instruction)
         casex(opcode)
-            7'b0000011: immOut <= { {53{instruction[31]}}, instruction[30:20]};
-            7'b0100011: immOut <= { {53{instruction[31]}}, instruction[30:25], instruction[11:7]};   
-            7'b1100011: immOut <= { {53{instruction[31]}}, instruction[7], instruction[30:25], instruction[11:8]};
-            default: immOut <= 32'bx;
+            7'b0000011: immOut <= { {53{instruction[31]}}, instruction[30:20]}; //I-type(for ld)
+            7'b0100011: immOut <= { {53{instruction[31]}}, instruction[30:25], instruction[11:7]}; //S-type(for sd)
+            7'b1100011: immOut <= { {52{instruction[31]}}, instruction[7], instruction[30:25], instruction[11:8], 1'b0}; //SB-type(for beq)
+            default: immOut <= 64'bx;
         endcase
 endmodule
