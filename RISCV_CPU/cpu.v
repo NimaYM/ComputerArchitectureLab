@@ -9,7 +9,7 @@
 
 module cpu(clk, address);
     input clk;
-    input [5:0] address;
+    input [47:0] address;
     wire memWrite, memRead, branch, memToReg, aluSrc , regWrite, zero;
     wire [1:0] aluOp;
     wire [3:0] aluControl;
@@ -20,7 +20,7 @@ module cpu(clk, address);
     mux #(64) mux_instance2 (readData, aluResult, memToReg, writeData);
 
     instruction_memory instruction_memory_instance (address, instruction);
-    data_memory data_memory_instance (clk, memWrite, memRead, aluResult[5:0], readData2,  readData);
+    data_memory data_memory_instance (clk, memWrite, memRead, {42'b0, aluResult[5:0]}, readData2,  readData);
 
     control control_instance (instruction[6:0], branch, memRead, memToReg, aluOp, memWrite, aluSrc, regWrite);
     alu_control alu_control_instance (aluOp, instruction[31:25], instruction[14:12], aluControl);

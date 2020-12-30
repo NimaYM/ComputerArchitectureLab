@@ -4,7 +4,7 @@
 
 module data_memory_tb;
     wire clk;
-    reg [5:0] address;
+    reg [47:0] address;
     reg memWrite, memRead;
     reg [63:0] writeData;
     wire [63:0] readData;
@@ -26,14 +26,14 @@ module data_memory_tb;
             i = i+1;
         end
 
-        #10 memWrite <= 1; writeData = 32'h12345678;
+        #10 memWrite <= 1;
         i = 0;
         while(i <= 15) begin
             @(posedge clk); address <= i*5; writeData <= i+1;
             i = i+1;
         end
 
-        #10 address <= 32'hXXXXXXXX; memWrite <= 0; memRead <= 1;
+        #10 memWrite <= 0; memRead <= 1;
         i = 0;
         while(i <= 15) begin
             @(posedge clk); address <= i*5;

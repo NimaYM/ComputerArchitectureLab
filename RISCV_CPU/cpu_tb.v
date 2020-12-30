@@ -4,7 +4,7 @@
 
 module cpu_tb;
     wire clk;
-    wire [5:0] address;
+    wire [47:0] address;
     reg [5:0] testData;
     integer i;
 

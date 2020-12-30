@@ -4,8 +4,8 @@
 
 module register_file_tb;  
     reg [4:0] readRegister1, readRegister2, writeRegister;
-    reg [31:0] writeData;
-    wire [31:0] readData1, readData2;
+    reg [63:0] writeData;
+    wire [63:0] readData1, readData2;
     wire clk;
     reg regWrite;
     integer i;

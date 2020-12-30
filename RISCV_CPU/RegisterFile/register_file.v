@@ -11,6 +11,6 @@ module register_file(regWrite, readRegister1, readRegister2, writeRegister, writ
     always @(readRegister2)
         readData2 <= (readRegister2 != 0) ? registerFile[readRegister2] : 0;
     
-    always @(negedge clk) 
-        if (regWrite == 1) registerFile[writeRegister] <= writeData;
+    always @(posedge clk) 
+        if (regWrite) registerFile[writeRegister] <= writeData;
 endmodule

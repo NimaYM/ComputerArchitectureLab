@@ -1,6 +1,6 @@
 module alu(X, Y, aluControl,  aluResult, zero);
-    input  [63:0] X, Y;
-    input  [3:0] aluControl;
+    input [63:0] X, Y;
+    input [3:0] aluControl;
     output reg [63:0] aluResult;
     output zero;
 

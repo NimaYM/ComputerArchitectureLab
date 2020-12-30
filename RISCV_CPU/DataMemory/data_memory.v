@@ -1,16 +1,13 @@
 module data_memory(clk, memWrite, memRead, address, writeData, readData);
     input clk, memWrite, memRead;
-    input [5:0] address;
+    input [47:0] address;
     input [63:0] writeData;
     output [63:0] readData;
     reg [63:0] RAM[0:63];
 
-    reg [63:0] readDataReg;
-    assign readData = readDataReg;
+    assign readData = RAM[address[5:0]];
 
-    always @(posedge clk) begin
-        if(memWrite) RAM[address] <= writeData;
-        else if(memRead) readDataReg = RAM[address];
-    end
+    always @(posedge clk)
+        if(memWrite) RAM[address[5:0]] <= writeData;
         
 endmodule

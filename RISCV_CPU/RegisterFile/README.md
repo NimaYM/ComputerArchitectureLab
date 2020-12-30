@@ -3,6 +3,8 @@
 A register file is an array of processor registers in a central processing unit (CPU).
 For more information, see [this link](https://en.wikipedia.org/wiki/Program_counter).
 
+![register_file](./register_file.png)
+
 ## Testbench
 
 To see the result of written testbench, use this commands:

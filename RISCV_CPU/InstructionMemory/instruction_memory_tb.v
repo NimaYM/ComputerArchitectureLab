@@ -4,7 +4,7 @@
 
 module instruction_memory_tb;
     wire clk;
-    reg [5:0] address;
+    reg [47:0] address;
     wire [31:0] instruction;
     integer i;
 

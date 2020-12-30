@@ -22,7 +22,7 @@ module alu_control_tb;
 
    clock_generator clock (clk);
    control ctrl(opcode, branch, memRead, memToReg, aluOp, memWrite, aluSrc, regWrite);
-   alu_control alu_ctrl(aluOp, funct7, funct3, , aluControl);
+   alu_control alu_ctrl(aluOp, funct7, funct3, aluControl);
 
    initial begin
       $dumpfile("alu_control_tb.vcd");

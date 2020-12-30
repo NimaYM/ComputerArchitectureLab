@@ -7,7 +7,7 @@ module imm_gen(instruction, out);
     assign out = immOut;
     assign opcode = instruction[6:0];
 
-    always @(instruction) #0.1
+    always @(instruction)
         casex(opcode)
             7'b0000011: immOut <= { {53{instruction[31]}}, instruction[30:20]};
             7'b0100011: immOut <= { {53{instruction[31]}}, instruction[30:25], instruction[11:7]};   

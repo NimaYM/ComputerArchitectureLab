@@ -4,7 +4,7 @@ module alu_control(aluOp, funct7, funct3, aluControl);
     input [2:0] funct3;
     output reg [3:0] aluControl;
 
-    always @(aluOp or funct7 or funct3)
+    always @(aluOp | funct7 | funct3)
         case(aluOp)
             2'b00: aluControl <= 4'b0010; //add (for ld, sd)
             2'b01: aluControl <= 4'b0110; //sub (for beq)
